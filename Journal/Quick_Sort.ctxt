@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=a\ n
+comment1.target=void\ display(int[],\ int)
+comment2.params=a\ start\ end
+comment2.target=void\ quicks(int[],\ int,\ int)
+comment3.params=a\ start\ end
+comment3.target=int\ partition(int[],\ int,\ int)
+numComments=4
