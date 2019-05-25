@@ -128,7 +128,6 @@ public class music_shop
         System.out.println("\t\t   The Products available in the shop");
         System.out.println("\nProduct ID"+"\t"+"Product Type"+"\t"+"Category"+"\t"+"Name"+"\t\t"
         +"Quantity"+"\t"+"Cost");
-        System.out.println("Please remember the Product ID of the item you want to purchase!!");
         for(i=0;i<15;i++)
         {
             if(prd_id[i]!=0)
@@ -137,6 +136,7 @@ public class music_shop
                 +"\t"+prd_qty1[i]+"\t\t"+prd_cost1[i]);
             }
         }
+        System.out.println("Please remember the Product ID of the item you want to purchase!!");
     }
 
     void buy()throws IOException
@@ -182,11 +182,11 @@ public class music_shop
         ob.delay();
         if(flag==true)
         {
-            System.out.println("\t\t -------Search succesfull-------");
-            System.out.println("\nProduct ID"+"\t"+"Product Type"+"\t"+"Category"+"\t"+"Name"
-            +"\t\t"+"Quantity"+"\t"+"Cost");
-            System.out.println(prd_id[cent]+prd_type[cent]+prd_cat[cent]+prd_name[cent]
-            +prd_qty1[cent]+prd_cost1[cent] + "\n");
+            System.out.println("\t\t -------Search Succesfull-------");
+            System.out.println("\nProduct ID"+"\t\t"+"Product Type"+"\t\t"+"Category"+"\t\t"+"Name"
+            +"\t\t"+"Qty. Avail."+"\t\t"+"Cost");
+            System.out.println(prd_id[cent]+"\t\t\t"+prd_type[cent]+"\t\t"+prd_cat[cent]+"\t\t"+prd_name[cent]
+            +"\t"+prd_qty1[cent]+"\t\t"+prd_cost1[cent] + "\n");
             System.out.println("--------------------------------------------------------------");
             while(true)
             {
@@ -254,7 +254,7 @@ public class music_shop
             {
                 if(id==prd_id[i])
                 {
-                    System.out.println("Enter the qty to modify:");
+                    System.out.println("Enter the quantity to modify:");
                     prd_qty1[i]=Integer.parseInt(in.readLine());
                 }
             }

@@ -1,0 +1,80 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-8-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.11.jar:/usr/share/bluej/hamcrest-core-1.3.jar:/usr/share/bluej/lang-stride.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-service.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/home/adnan/Desktop/Java_programs
+-d
+/home/adnan/Desktop/Java_programs/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+/home/adnan/Desktop/Java_programs/music_shop.java
+<---- end of javadoc command ---->
+Loading source file /home/adnan/Desktop/Java_programs/music_shop.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_191
+Building tree for all the packages and classes...
+Generating /home/adnan/Desktop/Java_programs/doc/music_shop.html...
+/home/adnan/Desktop/Java_programs/Calculation.java:30: error: '.class' expected
+        double sum =int s;
+                        ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:9: error: '.class' expected
+        Stackpointer(int nn)
+                         ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:9: error: ';' expected
+        Stackpointer(int nn)
+                           ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:18: error: illegal start of expression
+                void pushdata(int item)
+                ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:18: error: ';' expected
+                void pushdata(int item)
+                             ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:18: error: ';' expected
+                void pushdata(int item)
+                                      ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:30: error: illegal start of expression
+            void popdata(int v)
+            ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:30: error: ';' expected
+            void popdata(int v)
+                        ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:30: error: ';' expected
+            void popdata(int v)
+                              ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:35: error: 'else' without 'if'
+                else
+                ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:42: error: illegal start of expression
+            void display()
+            ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:42: error: ';' expected
+            void display()
+                        ^
+/home/adnan/Desktop/Java_programs/Stack_Pointer.java:56: error: reached end of file while parsing
+}
+ ^
+/home/adnan/Desktop/Java_programs/arranging.java:6: error: reached end of file while parsing
+BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+                                                                        ^
+Generating /home/adnan/Desktop/Java_programs/doc/package-frame.html...
+Generating /home/adnan/Desktop/Java_programs/doc/package-summary.html...
+Generating /home/adnan/Desktop/Java_programs/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/adnan/Desktop/Java_programs/doc/allclasses-frame.html...
+Generating /home/adnan/Desktop/Java_programs/doc/allclasses-noframe.html...
+Generating /home/adnan/Desktop/Java_programs/doc/index.html...
+14 errors
