@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6b89701-48a7-406d-a176-c1c74a9b1885" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/sort_challenge1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Data_Structures/com/company/merge_sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Data_Structures/com/company/merge_sort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/insertion_sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/insertion_sort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/insertion_sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
+            <state relative-caret-position="396">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -85,17 +82,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/merge_sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278">
+            <state relative-caret-position="864">
               <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/sort_challenge1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="864">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -189,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sort_challenge1">
+  <component name="RunManager" selected="Application.insertion_sort">
     <configuration name="counting_sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.counting_sort" />
       <module name="Data_Structures" />
@@ -203,8 +200,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="quick_sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.quick_sort" />
+    <configuration name="insertion_sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.insertion_sort" />
       <module name="Data_Structures" />
       <extension name="coverage">
         <pattern>
@@ -257,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.insertion_sort" />
         <item itemvalue="Application.sort_challenge1" />
         <item itemvalue="Application.sort_jdk" />
         <item itemvalue="Application.radix_sort" />
         <item itemvalue="Application.counting_sort" />
-        <item itemvalue="Application.quick_sort" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558805443593</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding program">
+      <created>1558833873602</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558833873602</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -320,9 +324,9 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39899623" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991013" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32991013" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50054646" side_tool="true" weight="0.29011554" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991013" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49945354" weight="0.32991013" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50054646" side_tool="true" weight="0.32991013" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49945354" weight="0.32991013" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49945354" weight="0.32991013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,7 +341,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added new programs" />
     <MESSAGE value="added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
+    <MESSAGE value="adding program" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding program" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Bubble_Sort.java" />
@@ -399,24 +404,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/sort_challenge1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/merge_sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
+        <state relative-caret-position="864">
           <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/insertion_sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/sort_challenge1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="396">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
