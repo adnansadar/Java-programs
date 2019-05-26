@@ -4,7 +4,7 @@ public class insertion_sort {
     public static void main(String[] args) {
         int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
 
-        for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length;
+        for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length;// as sorted index at start is always 0
              firstUnsortedIndex++) {
             int newElement = intArray[firstUnsortedIndex];
 
