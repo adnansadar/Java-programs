@@ -15,15 +15,20 @@ public class Main {
         intTree.insert(32);
         intTree.insert(17);
 
-//        intTree.traverseInOrder();
-//        System.out.println();
+        intTree.traverseInOrder();
+        System.out.println();
 //
 //        System.out.println(intTree.get(27));
 //        System.out.println(intTree.get(17));
 //        System.out.println(intTree.get(8888));
 
-        System.out.println(intTree.min());
-        System.out.println(intTree.max());
+//        System.out.println(intTree.min());
+//        System.out.println(intTree.max());
+
+        intTree.delete(8888);
+        intTree.traverseInOrder();
+        System.out.println();
+
     }
 }
 
