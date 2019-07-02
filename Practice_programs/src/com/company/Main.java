@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-
+    /**Linear Search in Single Dimensional Array*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[5];
