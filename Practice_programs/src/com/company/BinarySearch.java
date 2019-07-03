@@ -17,24 +17,25 @@ public class BinarySearch {
         System.out.println("Enter no to be searched: ");
         int n = Integer.parseInt(br.readLine());
         BinarySearch ob = new BinarySearch();
-        ob.search(size,arr,n);
+        int result = ob.search(size,arr,n);
+        if(result==-1)
+            System.out.println("The no. is not present.");
+        else
+            System.out.println("The no. is present!");
 
     }
-    public void search(int len,int a[],int num){
+    public int search(int len,int a[],int num){
         int start = 0;
         int end = len-1;
         for (int i =0;i<len;i++){
-        int mid = (start+end)/2;
-            if(num==mid)
-                System.out.println("Search Successful! "+num+"is present in the array.");
-            else if (num < mid){
+            int mid = (start+end)/2;
+            if(num==a[mid])
+                return num;
+            else if (num < a[mid])
                 end=mid-1;
-            }
-            else if (num>mid){
+            else
                 start = mid+1;
-            }
-            if (i==len-1)
-                System.out.println(("The number is not present in the array."));
         }
+        return -1;
     }
 }
