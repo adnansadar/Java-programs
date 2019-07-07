@@ -1,5 +1,5 @@
 package com.company;
-
+/**Used only for a small range of nos*/
 public class CountingSort {
     public static void main(String[] args) {
         int[]arr = {2,5,9,8,2,4,3};
