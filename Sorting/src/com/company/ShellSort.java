@@ -1,5 +1,6 @@
 package com.company;
-
+//Similar to insertion sort but the gap taken here is more which increases efficiency.
+//The gap is reduced to 1 later on thus insertion sort is in the program.
 public class ShellSort {
         /* An utility function to print array of size n*/
         static void printArray(int arr[])
@@ -46,7 +47,7 @@ public class ShellSort {
         // Driver method
         public static void main(String args[])
         {
-            int arr[] = {12, 34, 54, 2, 3};
+            int arr[] = {12, 11, 13, 5, 6};
             System.out.println("Array before sorting");
             printArray(arr);
 
