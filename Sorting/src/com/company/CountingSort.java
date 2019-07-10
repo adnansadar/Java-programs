@@ -15,9 +15,9 @@ public class CountingSort {
         }
             int j=0;
             for(int i=min;i<=max;i++){
-                while(countArray[i-min]>0){//ex:no of 2s are 2 >0
+                while(countArray[i-min]>0){//ex: no of 2s are 2 > 0
                     input[j++]=i;//adding elements to the input array
-                    countArray[i-min]--;//decrementing the counting array as we do so
+                    countArray[i-min]--;//decrementing the counting array
             }
         }
     }
