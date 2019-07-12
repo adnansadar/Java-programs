@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println(list.isEmpty());
 
-        list.addToFront(janeJones);
+        list.addToFront(janeJones);//addtoFront method is in LL class
         list.addToFront(johnDoe);
         list.addToFront(marySmith);
         list.addToFront(mikeWilson);
@@ -21,7 +21,7 @@ public class Main {
 
         list.printList();
 
-        list.removeFromFront();
+        list.removeFromFront();//removeFromFront method is in LL class
         System.out.println(list.getSize());
         list.printList();
 

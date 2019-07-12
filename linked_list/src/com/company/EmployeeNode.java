@@ -1,5 +1,5 @@
 package com.company;
-
+//This class is used for getters and setters
 public class EmployeeNode {
     private Employee employee;
     private EmployeeNode next;
@@ -24,7 +24,7 @@ public class EmployeeNode {
         this.next = next;
     }
 
-    public String toString() {
+    public String toString() { //Declaration needs to be done in Employee class
         return employee.toString();
     }
 }
