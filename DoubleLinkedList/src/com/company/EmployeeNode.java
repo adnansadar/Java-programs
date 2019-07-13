@@ -1,5 +1,5 @@
 package com.company;
-
+//Class remains same as single linked list
 public class EmployeeNode {
     private Employee employee;
     private EmployeeNode next;

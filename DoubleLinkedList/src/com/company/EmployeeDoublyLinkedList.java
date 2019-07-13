@@ -9,21 +9,21 @@ public class EmployeeDoublyLinkedList {
         EmployeeNode node = new EmployeeNode(employee);
 
         if (head == null) {
-            tail = node;
+            tail = node;//opp to what is done in addToEnd, here tail = node
         }
         else {
-            head.setPrevious(node);
-            node.setNext(head);
+            head.setPrevious(node);//Current head's prev will be new node
+            node.setNext(head);//The new node's next will be the prev head
         }
 
-        head = node;
+        head = node;//assign current head to new node
         size++;
     }
 
     public void addToEnd(Employee employee) {
-        EmployeeNode node = new EmployeeNode(employee);
+        EmployeeNode node = new EmployeeNode(employee);//What is this?
         if (tail == null) {
-            head = node;
+            head = node;//opp to what is done in addToFront, here head = node
         }
         else {
             tail.setNext(node);
@@ -42,13 +42,14 @@ public class EmployeeDoublyLinkedList {
         EmployeeNode removedNode = head;
 
         if (head.getNext() == null) {
-            tail = null;
+            tail = null;//kind of similar to addToFront here you assign tail = null
         }
         else {
-            head.getNext().setPrevious(null);
+            head.getNext().setPrevious(null);//current head's next field will be the new head
+            // so its prev field has to be null.
         }
 
-        head = head.getNext();
+        head = head.getNext();//new head will be prev head's next field.
         size--;
         removedNode.setNext(null);
         return removedNode;
@@ -59,16 +60,17 @@ public class EmployeeDoublyLinkedList {
             return null;
         }
 
-        EmployeeNode removedNode = tail;
+        EmployeeNode removedNode = tail;//what is this?
 
         if (tail.getPrevious() == null) {
-            head = null;
+            head = null;//same as removeFromEnd
         }
         else {
-            tail.getPrevious().setNext(null);
+            tail.getPrevious().setNext(null);//tail's prev field will be new tail
+            // so its next field has to be null.
         }
 
-        tail = tail.getPrevious();
+        tail = tail.getPrevious();//Assigning tail's prev field as the new tail
         size--;
         removedNode.setPrevious(null);
         return removedNode;

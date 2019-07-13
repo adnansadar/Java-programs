@@ -1,5 +1,5 @@
 package com.company;
-//This class is used for getters and setters
+//This class is used for getters and setters [Use generate for this]
 public class EmployeeNode {
     private Employee employee;
     private EmployeeNode next;
