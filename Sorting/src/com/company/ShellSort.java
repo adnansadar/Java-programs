@@ -12,7 +12,7 @@ public class ShellSort {
         }
 
         /* function to sort arr using shellSort */
-        int sort(int arr[])
+        void sort(int arr[])
         {
             int n = arr.length;
 
@@ -41,7 +41,6 @@ public class ShellSort {
                     arr[j] = temp;
                 }
             }
-            return 0;
         }
 
         // Driver method
