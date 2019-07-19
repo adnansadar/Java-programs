@@ -1,5 +1,5 @@
 package com.company;
-
+//Copy program from tutorial.
 public class QuickSort {
     public static void main(String[] args) {
         int arr[] = {10, 7, 8, 9, 1, 5};
@@ -8,7 +8,7 @@ public class QuickSort {
         QuickSort ob = new QuickSort();
         ob.sort(arr, 0, n-1);
 
-        System.out.println("sorted array");
+        System.out.println("Sorted array:");
         printArray(arr);
     }
         void sort(int[]arr,int low,int high) {

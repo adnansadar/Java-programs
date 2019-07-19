@@ -20,9 +20,9 @@ public class MergeSort {
     private void sort(int[] a, int l, int r) {
         if (l < r) {
             int m = (l + r) / 2;
-            sort(a,0,m);
-            sort(a,m+1,r);
-            merge(a,l,m,r);
+            sort(a,0,m);// The entire left sub array is sorted at the end of this recursion
+            sort(a,m+1,r);// The entire right sub array is sorted at the end of this recursion
+            merge(a,l,m,r);// We just merge the left and right sub arrays at this point
         }
     }
     private void merge(int[]a,int l, int m, int r){
@@ -65,7 +65,7 @@ public class MergeSort {
             i++;
             k++;
         }
-
+        //Can avoid this, refer to tutorial code. Its better optimised.
         /* Copy remaining elements of R[] if any */
         while (j < n2)
         {
