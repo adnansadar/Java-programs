@@ -2,76 +2,48 @@ package com.company;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] arr = {3, 56, 1, 0, 34, 98, 8, 5};
-        MergeSort ob = new MergeSort();
-        System.out.println("The given array: ");
-        ob.printArr(arr);
-        System.out.println();
-        ob.sort(arr, 0, arr.length - 1);
-        System.out.println("The array after sorting: ");
-        ob.printArr(arr);
+        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+
+        mergeSort(intArray, 0, intArray.length);
+
+        for (int i = 0; i < intArray.length; i++) {
+            System.out.println(intArray[i]);
+        }
     }
 
-    private void printArr(int[] a) {
-        for (int i = 0; i < a.length; i++)
-            System.out.print(a[i] + " ");
+    // { 20, 35, -15, 7, 55, 1, -22 }
+    public static void mergeSort(int[] input, int start, int end) {
+
+        if (end - start < 2) {
+            return;
+        }
+
+        int mid = (start + end) / 2;
+        mergeSort(input, start, mid);
+        mergeSort(input, mid, end);
+        merge(input, start, mid, end);
     }
 
-    private void sort(int[] a, int l, int r) {
-        if (l < r) {
-            int m = (l + r) / 2;
-            sort(a,0,m);// The entire left sub array is sorted at the end of this recursion
-            sort(a,m+1,r);// The entire right sub array is sorted at the end of this recursion
-            merge(a,l,m,r);// We just merge the left and right sub arrays at this point
-        }
-    }
-    private void merge(int[]a,int l, int m, int r){
-        // Find sizes of two subarrays to be merged
-        int n1 = m-l+1;
-        int n2 = r-m;
-        //Create temp arrays
-        int L[] = new int [n1];
-        int R[] = new int [n2];
-        //Copy data to temp arrays
-        for (int i=0;i<n1;i++)
-            L[i] = a[l+i];
-        for (int j=0;j<n2;j++)
-            R[j] = a[m+1+j];
-        //Merge the temp arrays
+    // { 20, 35, -15, 7, 55, 1, -22 }
+    public static void merge(int[] input, int start, int mid, int end) {
 
-        // Initial indexes of first and second subarrays
-        int i = 0, j = 0;
-        // Initial index of merged subarry array
-        int k=l;
-        while(i<n1 && j<n2)
-        {
-            if(L[i]<=R[j])
-            {
-                a[k] = L[i];
-                i++;
-            }
-            else
-            {
-                a[k]=R[j];
-                j++;
-            }
-            k++;
+        if (input[mid - 1] <= input[mid]) {
+            return;
         }
-        /* Copy remaining elements of L[]
-         if any */
-        while (i < n1)
-        {
-            a[k] = L[i];
-            i++;
-            k++;
+
+        int i = start;
+        int j = mid;
+        int tempIndex = 0;
+
+        int[] temp = new int[end - start];
+        while (i < mid && j < end) {
+            temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
         }
-        //Can avoid this, refer to tutorial code. Its better optimised.
-        /* Copy remaining elements of R[] if any */
-        while (j < n2)
-        {
-            a[k] = R[j];
-            j++;
-            k++;
-        }
+
+        System.arraycopy(input, i, input, start + tempIndex, mid - i);
+        System.arraycopy(temp, 0, input, start, tempIndex);
+
+
     }
+
 }
