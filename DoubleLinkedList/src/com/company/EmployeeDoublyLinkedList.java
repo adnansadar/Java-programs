@@ -42,7 +42,7 @@ public class EmployeeDoublyLinkedList {
         EmployeeNode removedNode = head;
 
         if (head.getNext() == null) {
-            tail = null;//kind of similar to addToFront here you assign tail = null
+            tail = null;
         }
         else {
             head.getNext().setPrevious(null);//current head's next field will be the new head
@@ -63,7 +63,7 @@ public class EmployeeDoublyLinkedList {
         EmployeeNode removedNode = tail;//what is this?
 
         if (tail.getPrevious() == null) {
-            head = null;//same as removeFromEnd
+            head = null;
         }
         else {
             tail.getPrevious().setNext(null);//tail's prev field will be new tail
