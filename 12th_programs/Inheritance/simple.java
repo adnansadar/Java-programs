@@ -15,7 +15,8 @@ public class simple extends account
     }
     void display()
     {
-        super.display();
+        account ob = new account();
+        ob.display();
         System.out.println("The rate you entered is: "+rate);
         System.out.println("The time you entered is: "+time);
         System.out.println("Your Simple Interest is: "+calculation());

@@ -10,5 +10,5 @@ class salary extends pay
         date_of_join=doj;
         date_of_retire=dor;
     }
-    }
+}
        
