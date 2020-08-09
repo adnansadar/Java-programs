@@ -20,6 +20,11 @@ public class QuickSort
         {
             System.out.print(k+" ");
         }
+        int[] f = arr.clone();
+        for(int k:f)
+        {
+            System.out.print(k+" ");
+        }
         int l = 0;
         int r = n-1;
         sort(arr,l,r);
@@ -28,39 +33,39 @@ public class QuickSort
 
     public static void sort(int arr[],int l, int r)
     { 
+        //when single element is left, l==r and it'll stop dividing further
         if(l<r)
         {
-            int pi = partition(arr,l,r);
+            int pi = partition(arr,l,r);//pi=sorted place of the element in each iteration.
             sort(arr,l,pi-1);//sorting elements on the left side of the pi
             sort(arr,pi+1,r);//sorting elements on the right side of the pi
         }
-
     }
 
     public static int partition(int arr[],int l,int r)
     { 
-        int index = (l-1);
-        int j = l;
-        int pivot = arr[r];
-        for(int i = l; i<r;i++)
-        {
-            if(arr[i]< pivot)
-            {
-                index++;
-                swap(arr,arr[index],arr[i]);// getting smaller elements on the left side of the pivot.
-            }
+        int pivot = arr[r];  
+        int i = (l-1); // index of smaller element 
+        for (int j=l; j<r; j++) 
+        { 
+            // If current element is smaller than the pivot 
+            if (arr[j] < pivot) 
+            { 
+                i++; 
+                swap(arr,i,j);
+            } 
         }
-        swap(arr,arr[index+1],pivot); // insert pivot at its appropriate position
-        return index+1; // returns the position of partition index
+        //swapping the pivot(arr[r]) and i+1
+        swap(arr,i+1,r);
+        return i+1; //return partition index
     }
-    
-    public static void swap(int[]a,int i,int j)
+
+    public static void swap(int [] arr, int i , int j)
     {
-        int temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
+        int temp = arr[i]; 
+        arr[i] = arr[j]; 
+        arr[j] = temp; 
     }
-      
 
     public static void printArr(int [] arr)
     {

@@ -22,5 +22,15 @@ public class Lists
         System.out.println("Contains 30?: " +list1.contains(30));
         System.out.println("Index of 30: "+list1.indexOf(30));
         System.out.println("Is list1 empty? " +list1.isEmpty());
+        for(int k:list1){
+            System.out.println(k);
+        }
+        List list2 = new ArrayList();
+        list2.add(5);
+        list2.add("Hello");
+        list2.add(1);
+        for(Object k:list2){
+            System.out.println(k);
+        }
     }
 }
