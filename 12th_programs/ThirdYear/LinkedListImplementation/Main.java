@@ -4,6 +4,11 @@ class Node
 {
     int data;
     Node next;
+    public Node(int d)//default constructor
+    {
+        data = d;
+        next = null;
+    }
 }
 
 public class Main
@@ -24,9 +29,9 @@ class LinkedList
     Node head;
     public void insert(int data)
     {
-        Node node = new Node();
-        node.data = data;
-        node.next = null;     
+        Node node = new Node(data);
+        // node.data = data;
+        // node.next = null;     
         if(head==null)
         {
             head = node;
