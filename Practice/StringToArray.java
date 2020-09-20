@@ -1,6 +1,4 @@
-import java.util.*;
-
-public class tictactoe 
+public class StringToArray 
 {
 	public static void main(String[] args) 
 	{
